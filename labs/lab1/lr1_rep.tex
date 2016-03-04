@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{multicol,multirow}
+\usepackage{tabularx}
+\usepackage{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{./}
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection.}{0.3em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection.}{0.3em}{}
+
+\titlespacing{\section}{0pt}{*2}{*2}
+\titlespacing{\subsection}{0pt}{*1}{*1}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\usepackage{listings}
+\lstloadlanguages{Lisp}
+\lstset{extendedchars=false,
+	breaklines=true,
+	breakatwhitespace=true,
+	keepspaces = true,
+	tabsize=2
+}
+\begin{document}
+
+
+\section*{Отчет по лабораторной работе №\,1 
+по курсу \guillemotleft  Функциональное программирование\guillemotright}
+\begin{flushright}
+Студент группы 8О-308 МАИ \textit{Балес Александр}, \textnumero 4 по списку \\
+\makebox[7cm]{Контакты: {\tt aleks\_bales@mail.ru} \hfill} \\
+\makebox[7cm]{Работа выполнена: 03.03.2016 \hfill} \\
+\ \\
+Преподаватель: Иванов Дмитрий Анатольевич, доц. каф. 806 \\
+\makebox[7cm]{Отчет сдан: \hfill} \\
+\makebox[7cm]{Итоговая оценка: \hfill} \\
+\makebox[7cm]{Подпись преподавателя: \hfill} \\
+
+\end{flushright}
+
+\section{Тема работы}
+Примитивные функции и особые операторы Коммон Лисп.
+
+\section{Цель работы}
+Овладеть таким инструментом для решения задач, как примитивные функции и научиться пользоваться особыми операторами.
+
+\section{Задание}
+Синус угла (заданного в радианах) можно вычислить следующим образом.
+$$sin(x)\approx x$$ приближение при достаточно малых $x$, $$sin(x) = 3sin\dfrac{x}{3} - 4sin^3\dfrac{x}{3}$$ тригонометрическое тождество для уменьшения значения аргумента $sin$.
+
+Будем считать, что угол <<достаточно мал>>, если он не больше $0,1$ радиана.
+
+Запрограммируйте на языке Коммон Лисп функцию, вычисляющую синус по указанной формуле, с использованием рекурсии.
+\section{Оборудование студента}
+Процессор Intel Core i5-3230 4\,@\,3.2GHz, память: 8192Gb, разрядность системы: 64.
+
+\section{Программное обеспечение}
+ОС Ubuntu 14.04, среда GNU Common Lisp 2.6.10
+
+\section{Идея, метод, алгоритм}
+Функция {\tt sine} рекурсивна и работает следующим образом:
+\begin{itemize}
+\setlength{\itemsep}{-1mm} % уменьшает расстояние между элементами списка
+\item если вызвана с аргументом меньшим, чем 0.1 радиан, то вернет аргумент
+\item иначе вернет результат $sin(x) = 3sin\dfrac{x}{3} - 4sin^3\dfrac{x}{3}$ с рекурсивным вызовом.
+\end{itemize}
+
+\section{Сценарий выполнения работы}
+\begin{itemize}
+\item{\tt gcl -load lr1.lsp}
+\item{\tt (sine 12.15)}
+\end{itemize}
+\section{Распечатка программы и её результаты}
+\includegraphics[scale=0.7]{lr1Screen}
+\subsection{Исходный код}
+\lstinputlisting{./lr1.lsp}
+
+%\subsection{Результаты работы}
+%\lstinputlisting{./log2.lsp}
+
+\section{Дневник отладки}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Дата & Событие & Действие по исправлению & Примечание \\
+\hline
+\end{tabular}
+
+\section{Замечания, выводы}
+По Мастер методу следует, что сложность работы данного алгоритма - $O(N\lg{N})$
+\end{document}
