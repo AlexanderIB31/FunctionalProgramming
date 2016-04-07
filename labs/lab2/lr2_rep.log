@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.18)  3 APR 2016 00:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.18)  8 APR 2016 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -835,41 +835,106 @@ Overfull \hbox (86.07687pt too wide) in paragraph at lines 72--73
  []
 
 [2]
-LaTeX Font Info:    Try loading font information for U+msa on input line 96.
+LaTeX Font Info:    Try loading font information for U+msa on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 96.
+LaTeX Font Info:    Try loading font information for U+msb on input line 78.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (32.39206pt too wide) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+[]|\T2A/cmtt/m/n/12 Добавил ф-ию []genList[],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T2A/cmtt/m/n/12 которая возвращает
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T2A/cmtt/m/n/12 список из исходных
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T2A/cmtt/m/n/12 элементов, применяя к
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T2A/cmtt/m/n/12 ним ф-ию, передаваемую
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T2A/cmtt/m/n/12 в []map-set[] первым
+ []
+
+
+Overfull \hbox (1.07063pt too wide) in paragraph at lines 84--85
+[]|\T2A/cmtt/m/n/12 Асимптотически
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\T2A/cmtt/m/n/12 сложность не
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\T2A/cmtt/m/n/12 изменилась,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\T2A/cmtt/m/n/12 но по времени
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\T2A/cmtt/m/n/12 должно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\T2A/cmtt/m/n/12 работать
+ []
+
+
+Overfull \hbox (29.49051pt too wide) in paragraph at lines 78--87
+[][] 
+ []
+
+
+Overfull \hbox (32.39206pt too wide) in paragraph at lines 89--90
 []\T2A/cmtt/m/n/12 Из распечатки программы сразу видно, что сложность программы
  по времени $\OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N[]\OT1/cmr/m/
 n/12 )$\T2A/cmtt/m/n/12 ,
  []
 
 
-Overfull \hbox (34.78682pt too wide) in paragraph at lines 96--97
+Overfull \hbox (34.78682pt too wide) in paragraph at lines 89--90
 \T2A/cmtt/m/n/12 где $\OML/cmm/m/it/12 N$ \T2A/cmtt/m/n/12 --- число элементов 
 в списке. Стоит сразу также отметить, что ф-ии []iterator,
  []
 
 
-Overfull \hbox (42.64485pt too wide) in paragraph at lines 96--97
+Overfull \hbox (42.64485pt too wide) in paragraph at lines 89--90
 \T2A/cmtt/m/n/12 comp-elem[] реализованы при помощи концевой рекурсии, а это зн
 ачит, что скорее всего,
  []
 
 
-Overfull \hbox (48.81834pt too wide) in paragraph at lines 96--97
+Overfull \hbox (48.81834pt too wide) in paragraph at lines 89--90
 \T2A/cmtt/m/n/12 компилятор Коммон Лисп их оптимизирует до простого цикла. По п
 амяти так же сложность
  []
 
 
-Overfull \hbox (64.15518pt too wide) in paragraph at lines 96--97
+Overfull \hbox (64.15518pt too wide) in paragraph at lines 89--90
 \T2A/cmtt/m/n/12 составляет $\OML/cmm/m/it/12 O\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
 2 N[]\OT1/cmr/m/n/12 )$\T2A/cmtt/m/n/12 , т.к. мы при каждом рекурсивном вызове
  передаем в качестве параметром
@@ -879,11 +944,11 @@ Overfull \hbox (64.15518pt too wide) in paragraph at lines 96--97
 Here is how much of TeX's memory you used:
  5639 strings out of 493304
  72712 string characters out of 6139870
- 205380 words of memory out of 5000000
+ 209380 words of memory out of 5000000
  8974 multiletter control sequences out of 15000+600000
  13791 words of font info for 41 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,5n,32p,976b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,32p,921b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-sup
 er/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
@@ -892,7 +957,7 @@ cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 ts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on lr2_rep.pdf (3 pages, 177120 bytes).
+Output written on lr2_rep.pdf (3 pages, 178472 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
